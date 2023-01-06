@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!---------------- Bootrstrap CSS ---------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!---------------- FontAwesome Icons ---------------->
+    <script
+      src="https://kit.fontawesome.com/2a2e74e139.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---------------- My CSS ---------------->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/geeky.css" />
+    <!---------------- Script ---------------->
+    <script src="js/main.js" async defer></script>
+    <title>Anime</title>
+  </head>
+  <!---------------- Body ---------------->
+  <body class="anime_page">
+    <!---------------- Navbar ---------------->
+    <nav>
+      <div class="nav_left">
+        <a href="index.html">
+          <img src="/imgs/logo.png" alt="Page Logo">
+        </a>
+      </div>
+      <ul class="nav_right">
+       <li><a href="videogames.html">Videogames</a></li>
+       <li class="active">Anime</li>
+       <li><a href="drawing.html">Drawing</a></li>
+      </ul>
+    </nav>
+
+    <!---------------- Scroll to top button ---------------->
+    <div id="to-top" onclick="toTop()">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </div>
+
+    <!---------------- Carousel ---------------->
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="imgs/anime-ttgl.png"
+            class="d-block w-100"
+            alt="Shounen / Action Header"
+          />
+          <div class="carousel-caption">
+            <a href="#shounen"><h2>Shounen / Action</h2></a>
+            <p class="d-none d-md-block">
+              High intensity series with emphasis on camaraderie and bravery.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imgs/anime-deathnote.png"
+            class="d-block w-100"
+            alt="Seinen / Gore Header"
+          />
+          <div class="carousel-caption">
+            <a href="#seinen"><h2>Seinen / Gore</h2></a>
+            <p class="d-none d-md-block">
+              Crime, mature plot, horror and particularly dark takes.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imgs/anime-eizouken.png"
+            class="d-block w-100"
+            alt="Comedy / Slice of Life Header"
+          />
+          <div class="carousel-caption">
+            <a href="#comedy"><h2>Comedy / Slice of Life</h2></a>
+            <p class="d-none d-md-block">
+              Stories that observe the charm and details of everyday life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <!---------------- Shounen / Action Section ---------------->
+      <section id="shounen">
+        <h2>Shounen / Action</h2>
+        <div class="cards_container anime">
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2"
+                >Tengen Toppa<br />
+                Gurren Lagann</span
+              >
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Naruto</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2"
+                >JoJo no Kimyou<br />
+                na Bouken</span
+              >
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Slam Dunk</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Bleach</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Hajime no Ippo</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Kimetsu no Yaiba</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Boku no Hero Academia</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------- Seinen / Gore Section ---------------->
+      <section id="seinen">
+        <h2>Seinen / Gore</h2>
+        <div class="cards_container anime">
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Death Note</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Chainsaw Man</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Cyberpunk: Edgerunners</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2"
+                >Kiseijuu: Sei<br />
+                no Kakuritsu</span
+              >
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Mahou Shoujo Madoka★Magica</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Shingeki no Kyojin</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2"
+                >Yojouhan<br />
+                Shinwa Taikei</span
+              >
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Devilman: Crybaby</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------- Comedy / Slice of Life Section ---------------->
+      <section id="comedy">
+        <h2>Comedy / Slice of Life</h2>
+        <div class="cards_container anime">
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Great Teacher Onizuka</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Mob Psycho 100</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">One Punch Man</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Nichijou</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Eizouken ni wa <br />Te wo Dasu na!</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2"
+                >Sayonara<br />
+                Zetsubou Sensei</span
+              >
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Beastars </span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+          <div class="card_component anime">
+            <div class="card_body anime">
+              <span class="card_btn2">Beck: Mongolian <br />Chop Squad</span>
+              <a target="_blank" class="card_btn anime">MyAnimeList Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------- Bootstrap Script ---------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

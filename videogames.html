@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!---------------- Bootstrap CSS ---------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!---------------- FontAwesome Icons ---------------->
+    <script
+      src="https://kit.fontawesome.com/2a2e74e139.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---------------- My CSS ---------------->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/geeky.css" />
+    <!---------------- Script ---------------->
+    <script src="js/main.js" async defer></script>
+    <title>Videogames</title>
+  </head>
+  <body class="videogames_page">
+    <!---------------- Navbar ---------------->
+    <nav>
+      <div class="nav_left">
+        <a href="index.html">
+          <img src="/imgs/logo.png" alt="Page Logo">
+        </a>
+      </div>
+      <ul class="nav_right">
+       <li class="active">Videogames</li>
+       <li><a href="anime.html">Anime</a></li>
+       <li><a href="drawing.html">Drawing</a></li>
+      </ul>
+    </nav>
+    <!---------------- Scroll to top button ---------------->
+    <div id="to-top" onclick="toTop()">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </div>
+
+    <!---------------- Carousel ---------------->
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="imgs/game-hades.png"
+            class="d-block w-100"
+            alt="Roguelites Header"
+          />
+          <div class="carousel-caption">
+            <a href="#roguelite"><h2>Roguelites</h2></a>
+            <p class="d-none d-md-block">
+              Randomly generated content, short runs, carry-over progression.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imgs/game-terraria.png"
+            class="d-block w-100"
+            alt="Survival Sandboxes Header"
+          />
+          <div class="carousel-caption">
+            <a href="#sandbox"><h2>Survival Sandboxes</h2></a>
+            <p class="d-none d-md-block">
+              Craft your own adventure while exploring expansive worlds.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imgs/game-skyrim.png"
+            class="d-block w-100"
+            alt="RPGs Header"
+          />
+          <div class="carousel-caption">
+            <a href="#rpg"><h2>Role-Playing Games</h2></a>
+            <p class="d-none d-md-block">
+              Immerse and develop your own character through a rich story.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imgs/game-warcraft.png"
+            class="d-block w-100"
+            alt="Strategy Games Header"
+          />
+          <div class="carousel-caption">
+            <a href="#rts"><h2>Strategy Games</h2></a>
+            <p class="d-none d-md-block">
+              Decision-making skills will the determine the course and outcome.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <main>
+      <!---------------- Roguelite Section ---------------->
+      <section id="roguelite">
+        <h2>Roguelites</h2>
+        <div class="cards_container">
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/1145360/Hades/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/1147560/Skul_The_Hero_Slayer/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/588650/Dead_Cells/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------- Sandbox Section ---------------->
+      <section id="sandbox">
+        <h2>Survival Sandboxes</h2>
+        <div class="cards_container">
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/105600/Terraria/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/751780/Forager/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/275850/No_Mans_Sky/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/1604030/V_Rising/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------- RPGs Section ---------------->
+      <section id="rpg">
+        <h2>Role-Playing Games</h2>
+        <div class="cards_container">
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/588650/Dead_Cells/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------- RTSs Section ---------------->
+      <section id="rts">
+        <h2>Strategy Games</h2>
+        <div class="cards_container">
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://www.blizzard.com/es-es/download?platform=all"
+                class="card_btn"
+                >Buy on Blizzard!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/646570/Slay_the_Spire/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+          <div class="card_component">
+            <img class="card_img" />
+            <div class="card_body">
+              <p class="card_text"></p>
+              <a
+                href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/"
+                target="_blank"
+                class="card_btn"
+                >Buy on Steam!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------------- Bootstrap Script ---------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

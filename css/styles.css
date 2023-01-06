@@ -1,0 +1,37 @@
+:root {
+  --sepia: #c3bdac;
+  --accent: #27ca81;
+}
+body {
+  background-color: #eee;
+}
+nav {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: 3fr 1fr;
+  background-color: #ddd;
+  padding: 0 4rem 0 2rem;
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+}
+.nav_right li {
+  padding: .7rem 1rem;
+  color: #333;
+}
+.nav_right li:hover:not(.active) {
+  background-color: var(--accent);
+}
+.active {
+  font-weight: bold;
+}
+.nav_right a {
+  text-decoration: none;
+  color: #333;
+}
